@@ -1,0 +1,18 @@
+.ui.cards>.card.country-card {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 0;
+    box-shadow: 0 0 10px #d4d5d4;
+}
+.ui.card>.content, .ui.cards>.card>.content {
+    margin-left: 10px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    color: #29292a;
+    padding: 20px 0;
+
+}
+

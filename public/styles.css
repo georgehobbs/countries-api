@@ -1,0 +1,96 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: left;
+  background-color: #f9faf9;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  padding: 20px 20px 10px;
+  background-color: white;
+  box-shadow: 0px 3px 3px #edeeed;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
+.dark-mode {
+  text-align: right;
+}
+
+.moon-icon {
+  position: relative;
+  bottom: 3px;
+}
+
+.dark-mode-text {
+  font-size: 0.75rem;
+  float: right;
+  margin-left: 10px;
+}
+
+.filters {
+  margin-top: 30px;
+}
+
+.search-bar {
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px #edeeed;
+}
+
+.magnify {
+  margin: 10px;
+}
+
+.country-search {
+  margin: 15px;
+  width: 80%;
+  border: none;
+}
+
+.region-filter {
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+.region-filter-title {
+  padding: 15px;
+}
+
+@media (max-width: 750px) {
+  .region-filter {
+    text-align: left;
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+
+.dropdown button {
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px #edeeed;
+  background-color: white;
+  color: black;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.dropdown button::after {
+    display: none;
+}
+
+.btn-primary.dropdown-toggle, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: white;
+    color: black;
+}
+
+.country-list {
+  margin: auto;
+  width: 80%;
+}
