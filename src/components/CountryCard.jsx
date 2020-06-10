@@ -7,7 +7,7 @@ function CountryCard(props) {
   const countryLink = props.abbr.toUpperCase();
 
   return (
-      <div className="card country-card">
+      <div className="ui centered card">
         <div className="image">
           <img src={props.flag} />
         </div>
@@ -33,10 +33,10 @@ function CountryCard(props) {
                 {props.capital}
               </p>
             )}
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
 export default CountryCard;

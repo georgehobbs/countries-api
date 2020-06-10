@@ -23,68 +23,78 @@ function FullCountry(props) {
   }
 
   return (
-    <div className="full-country ui container">
+    <div className="full-country">
       <div className="back-button">
         <button onClick={goBack} className="ui button">
           Back
         </button>
       </div>
-      <div className="flag">
-        <img src={countryData.flag} />
-      </div>
-      <div className="country-info">
-        <h2>{countryData.name}</h2>
-        <p>
-          <label>Native Name: </label>
-          {countryData.nativeName}
-        </p>
-        <p>
-          <label>Population: </label>
-          {countryData.population}
-        </p>
-        <p>
-          <label>Region: </label>
-          {countryData.region}
-        </p>
-        <p>
-          <label>Sub Region: </label>
-          {countryData.subregion}
-        </p>
-        <p>
-          <label>Capital: </label>
-          {countryData.capital}
-        </p>
-        <br />
-        <br />
-        <p>
-          <label>Top Level Domain: </label>
-          {countryData.topLevelDomain}
-        </p>
-        <p>
-          <label>Currencies: </label>
+      <div className="row">
+        <div className="col-md-5 flag">
+          <img src={countryData.flag} />
+        </div>
+        <div className="col-md-7 country-detail">
+          <div className="row">
+            <h2>{countryData.name}</h2>
+          </div>
+          <div className="row">
+            <div className="col-md-6 country-info left">
+              <p>
+                <label>Native Name: </label>
+                {countryData.nativeName}
+              </p>
+              <p>
+                <label>Population: </label>
+                {countryData.population}
+              </p>
+              <p>
+                <label>Region: </label>
+                {countryData.region}
+              </p>
+              <p>
+                <label>Sub Region: </label>
+                {countryData.subregion}
+              </p>
+              <p>
+                <label>Capital: </label>
+                {countryData.capital}
+              </p>
+            </div>
+            <div className="col-md-6 country-info right">
+              <p>
+                <label>Top Level Domain: </label>
+                {countryData.topLevelDomain}
+              </p>
+              <p>
+                <label>Currencies: </label>
 
-          {countryData.currencies &&
-            countryData.currencies.map(({ name }) => name).join(", ")}
-        </p>
-        <p>
-          <label>Languages: </label>
+                {countryData.currencies &&
+                  countryData.currencies.map(({ name }) => name).join(", ")}
+              </p>
+              <p>
+                <label>Languages: </label>
 
-          {countryData.languages &&
-            countryData.languages.map(({ name }) => name).join(", ")}
-        </p>
-        <br />
-        <br />
-        <div className="borders">
-          <h5>Border Countries: </h5>
-          {countryData.borders &&
-            countryData.borders.map((border) => (
-              <button
-                className="mini ui button border-button"
-                onClick={clickBorder}
-              >
-                {border}
-              </button>
-            ))}
+                {countryData.languages &&
+                  countryData.languages.map(({ name }) => name).join(", ")}
+              </p>
+            </div>
+            <div class="row">
+              <div className="borders">
+                <p>
+                  <label>Border Countries: </label>
+                  {countryData.borders &&
+                    countryData.borders.map((border) => (
+                      <button
+                        className="mini ui button border-button"
+                        onClick={clickBorder}
+                      >
+                        {border}
+                      </button>
+                    ))}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

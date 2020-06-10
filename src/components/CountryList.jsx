@@ -1,9 +1,7 @@
 import React from "react";
 import CountryCard from "./CountryCard";
 
-
 const CountryList = (props) => {
-  
   const listOfCountries = props.countries.map((country) => {
     return (
       (props.selectedRegion === country.region ||
@@ -22,12 +20,7 @@ const CountryList = (props) => {
     );
   });
 
-  return props.countries.length === 0 ? (
-    <h4>No matching results</h4>
-  ) : (
-    
-    <div className="ui cards">{listOfCountries}</div>
-  );
+  return <div className="ui cards">{listOfCountries}</div>;
 };
 
 export default CountryList;

@@ -1,7 +1,27 @@
 .full-country {
-    width: 90%;
+    width: 95%;
+    margin: auto;
     margin-top: 50px;
 }
+
+@media (max-width: 750px) {
+    .full-country {
+        width: 85%;
+    }
+
+    .country-info {
+        padding-bottom: 30px !important;
+    }
+
+    .country-detail {
+        padding-left: 30px !important;
+    }
+
+    .borders {
+        padding-left: 20px !important;
+
+    }
+  }
 
 .back-button {
     margin: 50px auto;
@@ -16,7 +36,7 @@
 
 .flag img {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     box-shadow: 0 0 10px #e8e9e8;
 }
 
@@ -26,6 +46,14 @@ h2 {
     margin-bottom: 30px;
 }
 
+.country-detail {
+    padding-left: 100px;
+}
+
+.country-info {
+    padding-left: 0;
+    padding-bottom: 50px;
+}
 
 label {
     font-weight: 600;
@@ -34,6 +62,12 @@ label {
 
 p {
     margin-bottom: 5px;
+}
+
+.row .borders {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 15px !important;
 }
 
 .button.border-button {
